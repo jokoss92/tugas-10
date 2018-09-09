@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Ber, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bermain If</title>
+</head>
+<body>
+
+    <input id="password" placeholder="password" type="password">
+    <button id ="login">Login</button>
+    <h1 id="pesan"></h1>
+    <script>
+    const passwordDOM = document.getElementById('password')
+    const loginDOM = document.getElementById('login')
+    const pesanDOM = document.getElementById('pesan')
+    
+    loginDOM.addEventListener('click', function(){
+        const password = passwordDOM.value;
+        switch(password){
+            case "hai":
+                pesanDOM.innerHTML = "Hai... Bro"
+                break;
+            case "hello":
+                pesanDOM.innerHTML = "Hello... Bro"
+                break;
+            default:
+                pesanDOM.innerHTML = "Sorry... Bro"
+                break;
+        }
+    })
+    
+    </script>
+    
+</body>
+</html>
